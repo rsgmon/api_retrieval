@@ -11,8 +11,7 @@ Tests for `api_retrieval` module.
 
 import sys
 import unittest
-
-from api_retrieval import api_retrieval
+from api_retrieval.parse_args  import parse_args
 
 
 
@@ -24,5 +23,6 @@ class TestApi_retrieval(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_000_something(self):
-        pass
+    def test_000_args_correct(self):
+        parser = parse_args(['filename'])
+        self.assertTrue(parser.file)
