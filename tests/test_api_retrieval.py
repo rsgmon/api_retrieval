@@ -11,7 +11,7 @@ Tests for `api_retrieval` module.
 
 import sys
 import unittest
-from api_retrieval.parse_args  import parse_args
+from api_retrieval.setup_api_parameters import parse_args
 
 
 
