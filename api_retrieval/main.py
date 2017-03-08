@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
-import sys
-import api_retrieval.parse_args
-import json
-import os
+import api_retrieval.setup_api_parameters
 
 if __name__ == "__main__":
-
+    api_retrieval.setup_api_parameters.load_configuration_file()
 
