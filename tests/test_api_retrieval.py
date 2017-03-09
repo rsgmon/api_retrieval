@@ -15,7 +15,6 @@ from api_retrieval.setup_api_parameters import *
 from tests.test_data.test_data import test_config
 
 
-
 class TestApi_retrieval(unittest.TestCase):
 
     def setUp(self):
@@ -30,5 +29,8 @@ class TestApi_retrieval(unittest.TestCase):
 
     def test_001_path_correct(self):
         parser = parse_args(['C:\\Users\\Rye\\Google Drive\\School\\Python\\cli_apps\\api_retrieval\\tests\\test_data\\test_config.json'])
-        read_config_object(parser)
-        self.assertEqual(test_config[0]['base_url'], read_config_object(parser).path)
+        config_collection = read_config_file(parser)
+        self.assertEqual(type(config_collection), type([]))
+        self.assertEqual(config_collection[0]['base_url'], "http://www.urlbase.com")
+
+    # def test_002_
