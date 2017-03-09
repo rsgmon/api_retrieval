@@ -12,7 +12,7 @@ Tests for `api_retrieval` module.
 import sys
 import unittest
 from api_retrieval.setup_api_parameters import *
-from tests.test_data.test_data import test_config
+from tests.test_data.test_data import test_config, api_config
 
 
 class TestApi_retrieval(unittest.TestCase):
@@ -33,4 +33,7 @@ class TestApi_retrieval(unittest.TestCase):
         self.assertEqual(type(config_collection), type([]))
         self.assertEqual(config_collection[0]['base_url'], "http://www.urlbase.com")
 
-    # def test_002_
+    def test_002_create_config_collection(self):
+        config_collection = test_config
+        apiconfig_collection = create_config_collection(config_collection)
+        self.assertEqual(apiconfig_collection[0].entity, api_config[0].entity)
