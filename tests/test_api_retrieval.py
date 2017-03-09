@@ -28,10 +28,8 @@ class TestApi_retrieval(unittest.TestCase):
         self.assertTrue(parser.path)
 
     def test_001_path_correct(self):
-        parser = parse_args(['C:\\Users\\Rye\\Google Drive\\School\\Python\\cli_apps\\api_retrieval\\tests\\test_data\\test_config.json'])
-        config_collection = read_config_file(parser)
-        self.assertEqual(type(config_collection), type([]))
-        self.assertEqual(config_collection[0]['base_url'], "http://www.urlbase.com")
+        config_collection = read_config_file(None)
+        self.assertEqual(config_collection, None)
 
     def test_002_create_config_collection(self):
         config_collection = test_config
