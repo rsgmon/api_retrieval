@@ -23,5 +23,3 @@ def create_config_collection(config_collection):
 def config_operation():
     parsed = parse_args(sys.argv[1:])
     return create_config_collection(read_config_file(parsed))
-
-#So I read a json object from the json file which can contain many config objects.  I then return a collection of config objects. Now what I could do is say "hey I want to run this with a parameter one time and get data, or I want this to run everytime it checks a folder and that folder has changed, or if I input a variable I get a menu that allows me to run via inputing a config file location.

@@ -1,14 +1,11 @@
 # -*- coding: utf-8 -*-
 import os
+import api_retrieval.setup_api_parameters
+import api_retrieval.http_request
 
 if __name__ == "__main__":
-    print(os.environ)
-    # config = api_retrieval.setup_api_parameters.config_operation()
-    # [print(x) for x in config]
+    config_collection = api_retrieval.setup_api_parameters.config_operation()
+    for config in config_collection:
+        http_request = api_retrieval.http_request.HTTPRequestHandler(config)
+        print(http_request.post_request(http_request.config).json())
 
-# So we have a collection of configuation objects, each of these objects is passed to a url generator. This in turn will return json for processing
-
-"""
-Class
-    init or call accepts a config object
-    method build url takes the config parameters and does the building. we assume it has everything"""
