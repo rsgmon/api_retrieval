@@ -11,6 +11,7 @@ Tests for `api_retrieval` module.
 
 import sys
 import unittest
+import requests
 from api_retrieval.setup_api_parameters import *
 from tests.test_data.test_data import test_config, api_config, single_api_config, api_config_with_key_route
 from api_retrieval.http_request import HTTPRequestHandler

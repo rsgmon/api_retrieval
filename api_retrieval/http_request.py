@@ -2,8 +2,7 @@ import os
 import requests
 import json
 
-"""
-Class
+"""Class
     init or call accepts a config object
     method: build get url builds url from config attributes we assume it has exactly what we want
     method: build post builds a post from the config parameters. Assume config has exactly what we want.
