@@ -1,6 +1,5 @@
-import os
 import api_retrieval
-import json
+
 
 """Class
     init or call accepts a config object
