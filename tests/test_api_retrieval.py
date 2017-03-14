@@ -12,7 +12,7 @@ Tests for `api_retrieval` module.
 import unittest
 from api_retrieval.setup_api_parameters import *
 from tests.test_data.test_data import test_config, api_config, single_api_config, api_config_with_key_route
-# from api_retrieval.http_request import HTTPRequestHandler
+from api_retrieval.http_request import HTTPRequestHandler
 import api_retrieval.config
 
 
@@ -37,9 +37,9 @@ class TestApi_retrieval(unittest.TestCase):
         apiconfig_collection = create_config_collection(config_collection)
         self.assertTrue(isinstance(apiconfig_collection[0], api_retrieval.config.APIConfig))
 
-    # def test_003_setup_http_request_object(self):
-    #     http_request_handler = HTTPRequestHandler(single_api_config)
-    #     self.assertTrue(type(http_request_handler.config) == APIConfig)
+    def test_003_setup_http_request_object(self):
+        http_request_handler = HTTPRequestHandler(single_api_config)
+        self.assertTrue(type(http_request_handler.config) == APIConfig)
 
     def test_004_construct_configuration(self):
         test_route = "http://www.testing.com/my_route"

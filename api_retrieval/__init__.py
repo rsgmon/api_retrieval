@@ -3,5 +3,3 @@
 __author__ = """Ryeland Gongora"""
 __email__ = 'rsgmon@gmail.com'
 __version__ = '0.1.0'
-
-import api_retrieval.setup_api_parameters
