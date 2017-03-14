@@ -20,18 +20,18 @@ class TestApi_retrieval(unittest.TestCase):
 
     def setUp(self):
         pass
-#
-#     def tearDown(self):
-#         pass
-#
-#     def test_000_args_correct(self):
-#         parser = parse_args(['filename'])
-#         self.assertTrue(parser.path)
-#
-#     def test_001_path_correct(self):
-#         config_collection = read_config_file(None)
-#         self.assertEqual(config_collection, None)
-#
+
+    def tearDown(self):
+        pass
+
+    def test_000_args_correct(self):
+        parser = parse_args(['filename'])
+        self.assertTrue(parser.path)
+
+    def test_001_path_correct(self):
+        config_collection = read_config_file(None)
+        self.assertEqual(config_collection, None)
+
 #     def test_002_create_config_collection(self):
 #         config_collection = test_config
 #         apiconfig_collection = create_config_collection(config_collection)
