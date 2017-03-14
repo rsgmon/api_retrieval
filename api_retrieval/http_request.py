@@ -1,5 +1,5 @@
 import os
-import requests
+import api_retrieval
 import json
 
 """Class
@@ -15,4 +15,4 @@ class HTTPRequestHandler(object):
             self.config = api_config_object
 
     def post_request(self, api_config_object):
-        return requests.post(api_config_object.route, json=api_config_object.parameters)
+        return api_retrieval.requests.post(api_config_object.route, json=api_config_object.parameters)
