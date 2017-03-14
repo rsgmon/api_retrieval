@@ -11,13 +11,10 @@ Tests for `api_retrieval` module.
 
 import unittest
 from api_retrieval.setup_api_parameters import *
-# from test
-from tests.test_data_folder.test_data import test_config
+# from tests.test_data_folder.test_data import test_config
 # from tests.test_data.test_data import test_config, api_config, single_api_config, api_config_with_key_route
-# # from api_retrieval.http_request import HTTPRequestHandler
+from api_retrieval.http_request import HTTPRequestHandler
 import api_retrieval.config
-#
-#
 class TestApi_retrieval(unittest.TestCase):
 
     def setUp(self):
