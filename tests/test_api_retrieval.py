@@ -16,10 +16,10 @@ from api_retrieval.setup_api_parameters import *
 # import api_retrieval.config
 #
 #
-# class TestApi_retrieval(unittest.TestCase):
-#
-#     def setUp(self):
-#         pass
+class TestApi_retrieval(unittest.TestCase):
+
+    def setUp(self):
+        pass
 #
 #     def tearDown(self):
 #         pass
