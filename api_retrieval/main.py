@@ -8,4 +8,3 @@ if __name__ == "__main__":
     for config in config_collection:
         http_request = api_retrieval.http_request.HTTPRequestHandler(config)
         print(http_request.post_request(http_request.config).json())
-

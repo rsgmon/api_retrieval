@@ -17,4 +17,3 @@ class HTTPRequestHandler(object):
 
     def post_request(self, api_config_object):
         return requests.post(api_config_object.route, json=api_config_object.parameters)
-

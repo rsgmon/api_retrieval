@@ -52,4 +52,3 @@ class TestApi_retrieval(unittest.TestCase):
         test_route = "http://www.testing.com/my_route/20349587"
         self.assertEqual(api_config_with_key_route.route, test_route)
 
-
