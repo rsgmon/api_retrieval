@@ -8,7 +8,6 @@ test_api_retrieval
 Tests for `api_retrieval` module.
 """
 
-
 import unittest
 from api_retrieval.setup_api_parameters import *
 # from api_retrieval.tests.test_data_folder.test_data import test_config, api_config, single_api_config, api_config_with_key_route
