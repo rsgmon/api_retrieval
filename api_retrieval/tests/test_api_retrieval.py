@@ -36,10 +36,10 @@ class TestApi_retrieval(unittest.TestCase):
         apiconfig_collection = create_config_collection(config_collection)
         self.assertTrue(isinstance(apiconfig_collection[0], api_retrieval.config.APIConfig))
 
-    # def test_003_setup_http_request_object(self):
-    #     http_request_handler = HTTPRequestHandler(single_api_config)
-    #     self.assertTrue(type(http_request_handler.config) == APIConfig)
-    #
+    def test_003_setup_http_request_object(self):
+        http_request_handler = HTTPRequestHandler(single_api_config)
+        self.assertTrue(type(http_request_handler.config) == APIConfig)
+
     def test_004_construct_configuration(self):
         test_route = "http://www.testing.com/my_route"
         test_parameter = {'api_key': '20349587', 'entity': '0984752039578e4r'}
