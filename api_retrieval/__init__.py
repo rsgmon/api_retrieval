@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import requests
 
 __author__ = """Ryeland Gongora"""
 __email__ = 'rsgmon@gmail.com'
